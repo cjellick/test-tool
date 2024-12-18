@@ -1,0 +1,5 @@
+Name: My Test Tool
+Description: my test
+
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/test.py
+
