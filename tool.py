@@ -26,7 +26,7 @@ async def main():
         )
         
         # Get the response
-        res = await run.text()
+        res = run.text()
         print(res)
 
     except Exception as err:
