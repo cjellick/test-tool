@@ -11,7 +11,7 @@ async def main():
     # Create system prompt input
     sys_prompt = {
         "message": "Favorite color?",
-        "fields": "color"
+        "fields": "color",
         "sensitive": False,
     }
 
