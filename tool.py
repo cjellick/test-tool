@@ -10,12 +10,32 @@ async def main():
 
     # Create system prompt input
     sys_prompt = {
-        "message": "Favorite color1?",
+        "message": "I'd like to get to know you better. Can you tell me some of your favorite things?",
         "fields": [
             {
-                "name": "color",
+                "name": "Color",
                 "sensitive": False,
-                "description": "yo color"
+                "description": "Your favorite color"
+            },
+            {
+                "name": "Food",
+                "sensitive": False,
+                "description": "Your favorite food"
+            },
+            {
+                "name": "Drink",
+                "sensitive": False,
+                "description": "Your favorite drink"
+            }, 
+            {
+                "name": "Animal",
+                "sensitive": False,
+                "description": "Your favorite animal"
+            },
+            {
+                "name": "Book",
+                "sensitive": False,
+                "description": "Your favorite book"
             }
         ]
     }
