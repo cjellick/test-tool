@@ -1,6 +1,5 @@
-Name: Promptinator
+Name: Color Promptinator
 Tools: sys.prompt
-Description: Adds colorful adjectives to the supply name
-Param: name: The name to boost
+Description: Will get the user's favorite color
 
 Use the sys.prompt tool to ask the user their favorit color
