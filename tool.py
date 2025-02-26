@@ -10,9 +10,14 @@ async def main():
 
     # Create system prompt input
     sys_prompt = {
-        "message": "Favorite color?",
-        "fields": "color",
-        "sensitive": False,
+        "message": "Favorite color1?",
+        "fields": [
+            {
+                "name": "color",
+                "sensitive": False,
+                "description": "yo color"
+            }
+        ]
     }
 
     try:
@@ -25,7 +30,10 @@ async def main():
         print(res)
 
     except Exception as err:
+        import traceback
         print(f"Error: {err}")
+        print("Full stack trace:")
+        print(traceback.format_exc())
         sys.exit(1)
 
 if __name__ == '__main__':
