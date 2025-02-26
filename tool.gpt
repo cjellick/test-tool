@@ -1,4 +1,4 @@
 Name: Color Promptinator
 Description: Opens a form that will prompt the user for their favorite color
 
-#!/usr/bin/env python3 tool.py
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/tool.py

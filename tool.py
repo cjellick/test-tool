@@ -1,7 +1,7 @@
-import os
 import sys
 import json
 import asyncio
+import traceback
 from gptscript import GPTScript, Options
 
 async def main():
@@ -30,7 +30,6 @@ async def main():
         print(res)
 
     except Exception as err:
-        import traceback
         print(f"Error: {err}")
         print("Full stack trace:")
         print(traceback.format_exc())
