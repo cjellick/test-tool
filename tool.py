@@ -11,8 +11,11 @@ async def main():
     # Create system prompt input
     sys_prompt = {
         "message": "Favorite color?",
-        "fields": "color",
-        "sensitive": "false"
+        "fields": [{
+            "name": "color",
+            "sensitive": False,
+            "description": "Your favorite color"
+        }]
     }
 
     try:
