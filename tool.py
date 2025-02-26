@@ -19,14 +19,12 @@ async def main():
     }
 
     try:
-        # Run GPTScript with the system prompt
-        run = await client.run(
+        # Run GPTScript with the system prompt and get response
+        res = await client.run(
             "sys.prompt", 
             Options(input=json.dumps(sys_prompt))
-        )
+        ).text()
         
-        # Get the response
-        res = run.text()
         print(res)
 
     except Exception as err:
